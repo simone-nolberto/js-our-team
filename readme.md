@@ -13,6 +13,11 @@ organizzare i singoli membri in card/schede
 
 
 # Steps 
-- logghiamo nome, ruolo e stringa di foto;
+- logghiamo nome, ruolo e stringa della foto;
 - stampiamo in DOM aggiungendo elementi html;
+
+
+# Tools
+- let/const
+- given js
 - 
