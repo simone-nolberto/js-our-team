@@ -47,12 +47,13 @@ for (let i = 0; i < team.length; i++) {
     let memberImage = member.image;
     // console.log(memberName, memberRole, memberImage);
 
-    let markup = `<div> ${memberName}, ${memberRole}, ${memberImage} </div>`;
+    let markup = `<card> 
+    <h1>${memberName}</h1>
+    <p>${memberRole}</p>
+    <img src="./assets/img/${memberImage} ">
+    </card>`;
     mainBlock.innerHTML += markup;
-
-    let img = document.createElement('img');
-    img.src = memberImage;
-    document.getElementById('container').appendChild(img);
+    
     
 
 
