@@ -41,22 +41,18 @@ const mainBlock = document.querySelector('.container');
 
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
-    // console.log(member.name, member.role, member.image);
+    // console.log(member);
+    console.log(member.name, member.role, member.image);
     let memberName = member.name;
     let memberRole = member.role;
     let memberImage = member.image;
-    // console.log(memberName, memberRole, memberImage);
 
-    let markup = `<card> 
+    let markup = `<div class="card"> 
+    <img src="./assets/img/${memberImage} ">
     <h1>${memberName}</h1>
     <p>${memberRole}</p>
-    <img src="./assets/img/${memberImage} ">
-    </card>`;
+    </div>`;
     mainBlock.innerHTML += markup;
-    
-    
 
-
-
-}
+};
 

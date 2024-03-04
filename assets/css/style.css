@@ -1,0 +1,15 @@
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    text-align: center
+
+};
+
+.card{
+    width: 400px;
+    margin: 1rem;
+}
+
