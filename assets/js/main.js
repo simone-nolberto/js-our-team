@@ -38,10 +38,24 @@ console.log(team);
 const mainBlock = document.querySelector('.container');
 // console.log(mainBlock);
 
+
 for (let i = 0; i < team.length; i++) {
-    const teamMember = team[i];
-    console.log(teamMember);
-    let markup = `<div> ${teamMember} </div>`;
+    const member = team[i];
+    // console.log(member.name, member.role, member.image);
+    let memberName = member.name;
+    let memberRole = member.role;
+    let memberImage = member.image;
+    // console.log(memberName, memberRole, memberImage);
+
+    let markup = `<div> ${memberName}, ${memberRole}, ${memberImage} </div>`;
     mainBlock.innerHTML += markup;
+
+    let img = document.createElement('img');
+    img.src = memberImage;
+    document.getElementById('container').appendChild(img);
+    
+
+
+
 }
 
